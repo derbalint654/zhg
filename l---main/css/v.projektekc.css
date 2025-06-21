@@ -1,0 +1,294 @@
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url(../images/villanyszerelo.png);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+   .navbar {
+  background-color: #010b44;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ez tolja jobbra a tartalmat */
+  padding: 0 20px;
+  font-weight: 900;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #fbff00;
+  color: #003769;
+}
+
+#logo {
+  height: auto;
+  width: 40px;
+  align-items: center;
+}
+
+.villany {
+  width: 100%;
+  height: 500px;
+}
+
+.custom-hr {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  height: 700px; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  position: relative;
+  top: -280px;
+}
+
+.projektlista {
+ display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  max-width: calc(100% - 600px);
+  margin: 0 auto;
+}
+.projekt-item {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: transform 0.3s;
+ flex: 0 0 calc(33.333% - 120px); 
+  max-width: calc(33.333% - 120px);
+}
+.projekt-item:hover {
+  transform: scale(1.1);
+}
+.projekt-item img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+.projekt-item p {
+    margin: 0;
+  font-weight: 100;
+  font-size: 18px;
+  max-width: 170px;
+  word-wrap: break-word;
+  text-align: left;
+  margin: 0 auto;
+}
+.projekt-item:visited,
+.projekt-item:active,
+.projekt-item:hover {
+  color: rgb(0, 0, 0);
+}
+.csik-kep {
+  height: 30px;          
+  width: auto;
+}
+.szoveg2 {
+   position: absolute;
+  top: -10px;       
+  left: 270px;    
+  font-size: 35px;
+  font-weight: 200;
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+
+.kapcsolat-szekcio {
+  background-color: #f5f5f5;
+  padding: 80px 20px;
+  text-align: center;
+}
+.kapcsolat-szekcio h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+.kapcsolat-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.info-blokk {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.info-blokk h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+.info-blokk p {
+  font-size: 16px;
+  color: #777;
+}
+
+
+
+
+
+.feherseg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;        
+  align-items: flex-start;      
+  gap: 5px;                       
+  padding: 40px 20px;
+  max-width: 1200px;             
+  margin: 0 auto;                
+  text-align: left;
+  color: white;
+}
+
+.feherseg > div {
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+
+.bold {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.site-footer {
+ background-color: #00162e97;
+ color: white;
+ text-align: center;
+ padding: 1px 0;
+ position: relative;
+ bottom: 0;
+ width: 100%;
+ font-size: 8px;
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+    position: relative;
+    z-index: 1100;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 100%;
+    background-color: #010b44;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-links a {
+    color: white;
+    padding: 15px 20px;
+    border-bottom: 1px solid #fff;
+    display: block;
+  }
+
+  .nav-links.active {
+    left: 0;
+  } 
+.projektlista {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  }
+
+   .projekt-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .projekt-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .projekt-item p {
+    font-size: 16px;
+    max-width: 300px;
+    margin: 8px auto 0;
+    text-align: center;
+  }
+
+  .szoveg2 {
+    left: 0px;
+    font-size: 28px;
+    text-align: left;
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+  .custom-hr {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 10px;
+    top: 0;
+  }
+  .feherk {
+    color: white;
+  }
+}

@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url(../images/villanyszerelo.png);
+}
+
+.navbar {
+  background-color: #010b44;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-weight: 900;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #fbff00;
+  color: #003769;
+}
+
+#logo {
+  height: auto;
+  width: 40px;
+  align-items: center;
+}
+
+.villany {
+  width: 100%;
+  height: 500px;
+}
+
+.custom-hr {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  height: 700px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  position: relative;
+  top: -280px;
+}
+
+.csik-kep {
+  height: 30px;
+  width: auto;
+}
+
+.szoveg2 {
+  position: absolute;
+  top: -10px;
+  left: 350px;
+  font-size: 35px;
+  font-weight: 200;
+  color: rgb(0, 0, 0);
+}
+
+.mini-hr,
+.mini-hr2 {
+  width: 1250px;
+  height: 2px;
+  background-color: #a7a9b0;
+}
+
+.mini-hr {
+  transform: translate(350px, 70px);
+}
+
+.mini-hr2 {
+  transform: translate(2px, 50px);
+}
+
+.kapcsolat-szekcio {
+  background-color: #f5f5f5;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.kapcsolat-szekcio h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.kapcsolat-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.info-blokk {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-blokk h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.info-blokk p {
+  font-size: 16px;
+  color: #777;
+}
+
+.feherseg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  color: white;
+}
+
+.feherseg > div {
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  background-color: #00162e97;
+  color: white;
+  text-align: center;
+  padding: 1px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 8px;
+}
+
+.szoveg3 {
+  padding-left: 350px;
+  padding-top: 120px;
+}
+
+.sotet {
+  font-weight: 900;
+}
+
+.feher {
+  color: white;
+}
+
+.vissza-link {
+  position: relative;
+  text-align: center;
+  top: 65px;
+  left: -150px;
+  z-index: 2;
+}
+
+.vissza-link a {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.vissza-link a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Hamburger ikon – ALAPBÓL NEM LÁTSZIK csak mobilon */
+.menu-toggle {
+  display: none;
+}
+
+/* ============================== */
+/* MOBILNÉZET (max. 600px szélesség) */
+/* ============================== */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+    position: relative;
+    z-index: 1100;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 100%;
+    background-color: #010b44;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-links a {
+    color: white;
+    padding: 15px 20px;
+    border-bottom: 1px solid #fff;
+    display: block;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .szoveg2 {
+    left: 50px;
+  }
+
+  .mini-hr {
+    transform: translate(20px, 70px);
+    width: 350px;
+  }
+
+  .szoveg3 {
+    padding-left: 35px;
+    padding-top: 120px;
+  }
+
+  .custom-hr {
+    height: 1200px;
+  }
+
+  .mini-hr2 {
+    transform: translate(-10px, 50px);
+    width: 350px;
+  }
+
+  .vissza-link {
+    left: -20px;
+  }
+
+}
